@@ -1,3 +1,4 @@
+var webdriver = require('selenium-webdriver');
 var username = process.env.BROWSERSTACK_USERNAME;
 var accessKey = process.env.BROWSERSTACK_ACCESS_KEY;
 var buildName = process.env.BROWSERSTACK_BUILD_NAME;
