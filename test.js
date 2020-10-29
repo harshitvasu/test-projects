@@ -8,7 +8,7 @@ var browserstackLocalIdentifier = process.env.BROWSERSTACK_LOCAL_IDENTIFIER;
 var capabilities = {
 	"os" : "Windows",
 	"os_version" : "10",
-	"browser" : "chrome",
+	"browserName" : "chrome",
 	"browser_version" : "latest",
 	"name": "BStack -[Jenkins] Sample Test", // test name
 	"build" : buildName, // CI/CD job name using BROWSERSTACK_BUILD_NAME env variable
