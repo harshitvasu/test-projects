@@ -17,7 +17,7 @@ let capabilities = {
 	"browserstack.user" : username,
 	"browserstack.key" : accessKey
 };
-
+console.log(process.env);
 let driver = new webdriver.Builder().
   usingServer("https://hub-cloud.browserstack.com/wd/hub").
   withCapabilities(capabilities).
