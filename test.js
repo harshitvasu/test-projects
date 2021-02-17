@@ -25,7 +25,7 @@ const runTest = async ()=>{
     build();
   await driver.get('https://www.google.com');
   console.log(await driver.getTitle());
-  await driver.get('https://localhost:4445');
+  await driver.get('http://bs-local.com:4445');
   console.log(await driver.getTitle());
   await driver.quit();
 }
