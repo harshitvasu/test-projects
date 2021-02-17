@@ -27,7 +27,14 @@ driver.get('https://www.google.com').then(function(){
   driver.findElement(webdriver.By.name('q')).sendKeys('BrowserStack').then(function(){
     driver.getTitle().then(function(title) {
       console.log(title);
-      driver.quit();
     });
   });
 }); 
+if(browserstackLocal){
+	driver.get('http://localhost:8080').then(function(){
+ 	driver.getTitle().then(function(title) {
+	      console.log(title);
+	      driver.quit();
+	    });
+	}); 
+}
